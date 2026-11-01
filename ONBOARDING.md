@@ -29,10 +29,10 @@ The following resources can be useful for learning what you'll need to know abou
 
   - Resources:
     - [Hello World](https://guides.github.com/activities/hello-world/): A first introduction to GitHub that will get you started if you haven't used it before.
-    - [GitFlow Intro](https://guides.github.com/introduction/flow/): An introduction to an effective way of using GitHub (i.e. a _workflow_).  The followign two guides walk through how to work with existing open source projects and essentially follow GitFlow:
+    - [GitFlow Intro](https://guides.github.com/introduction/flow/): An introduction to an effective way of using GitHub (i.e. a _workflow_).  The following two guides walk through how to work with existing open source projects and essentially follow GitFlow:
       - [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
       - [7 Steps to Get Started with Git](https://www.fosslife.org/7-steps-get-started-git).
-    - [Git Immersion](https://gitimmersion.com/): A tutorial walks through a series of short hands-on exercises that provide practice with the key features of git.
+    - [Git Immersion](https://gitimmersion.com/): A tutorial that walks through a series of short hands-on exercises that provide practice with the key features of git.
     - [Pro Git Book](http://git-scm.com/book/en/v2) | [Learn Git Tutorial](https://www.tutorialspoint.com/git/index.htm): More detailed and comprehensive coverage of git's features and use.
 
 ## Quickest Start ##
@@ -138,7 +138,7 @@ The FarmData2 front end exchanges data with the server using the [FarmOS API](ht
   - Resources:
     - [What is an API and how does it work?](https://www.youtube.com/watch?v=Yzx7ihtCGBs): A video introduction to APIs with a few examples.This is a good place to start if you are new to APIs.
     - [Using Axios to Consume APIs](https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html): A short example of a `GET` request using Axios and Vue.js.
-    - [Axios](https://github.com/axios/axios): Full documentation for the axios library. This show how to do both `GET` and `POST` requests.
+    - [Axios](https://github.com/axios/axios): Full documentation for the Axios library. This show how to do both `GET` and `POST` requests.
     - [FarmOS API](https://farmos.org/development/api/): Documentation for the FarmOS API.
     - [Hoppscotch](https://hoppscotch.io/): A tool for experimenting with API calls. This can be useful in figuring out how to request what you want from the FarmData2 API and how its responses are formatted.
 
@@ -151,14 +151,14 @@ The FarmData2 front end exchanges data with the server using the [FarmOS API](ht
 
 #### Cypress ####
 
-The functionality of FarmData2 is tested using the [Cypress framework](https://www.cypress.io/). The tests in FarmData2 consist of end-to-end tests and component tests.  The end-to-end tests run against the developer instance of FarmData2 and check the functionality of the pages.  The component tests check the behavior of custom components that appear in FarmData2, in isolation from the runing instance. FarmData 2 provides support for running both types of Cypress tests in a Docker container that eliminates the need to install or configure Cypress. See the documentation in the [farmdata2_modules/fd2_tabs/README.md](https://github.com/DickinsonCollege/FarmData2/blob/main/farmdata2_modules/fd2_tabs/fd2_example/README.md) file for information about runing Cypress tests in FarmData2. 
+The functionality of FarmData2 is tested using the [Cypress framework](https://www.cypress.io/). The tests in FarmData2 consist of end-to-end tests and component tests.  The end-to-end tests run against the developer instance of FarmData2 and check the functionality of the pages.  The component tests check the behavior of custom components that appear in FarmData2, in isolation from the running instance. FarmData 2 provides support for running both types of Cypress tests in a Docker container that eliminates the need to install or configure Cypress. See the documentation in the [farmdata2_modules/fd2_tabs/README.md](https://github.com/DickinsonCollege/FarmData2/blob/main/farmdata2_modules/fd2_tabs/fd2_example/README.md) file for information about running Cypress tests in FarmData2. 
 
 ##### End-to-End Tests #####
 
 The Cypress end-to-end test framework works by controlling the web browser. A test typically consists of a series of steps that are automated by the Cypress tests, called _spec_s. A typical spec consist of the steps:
   1. Setup the test (e.g. login, prime the database)
   1. Visit a specific page
-  1. Query the page for an _html element_ of interest (e.g. button, ext field)
+  1. Query the page for an _html element_ of interest (e.g. button, text field)
   1. Interact with that element (e.g. click the button, enter some text)
   1. Make an assertion about the result (e.g. new information appears on the page)
 
